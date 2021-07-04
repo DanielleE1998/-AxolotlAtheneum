@@ -1,2 +1,2 @@
-# -AxolotlAtheneum
+# AxolotlAtheneum
 SE Team Project
