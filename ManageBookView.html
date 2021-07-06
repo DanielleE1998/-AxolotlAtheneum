@@ -1,0 +1,70 @@
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Manage Book View</title>
+    </head>
+	
+	   <body>
+        
+
+      	<aside id="sideBarA">
+			<fieldset class = "delete_book">
+                <h2>Delete Book</h2>
+				<p> Enter ISBN of book you wish to delete</p>
+			<input type="text" name="deleteISBN" id="deleteISBN" placeholder="XXXXXXXXXX">
+			<input type="button" id = "deleteISBN_button" value="DELETE" onclick="deleteISBN()">\
+			</fieldset>
+		</aside>
+		<aside id ="sideBarB">
+			<fieldset class = "add_book">
+                                <h2>Add Book</h2>
+                                <label for="newISBN">ISBN </label>
+                                <input type="text" name="newISBN" id="newISBN" required placeholder="XXXXXXXXXX">
+                                <text for="newISBN" id="newISBNText"> * </text><br>
+                                
+                                <label for="newCategory">Category </label>
+                                <input type="text" name="newCategory" id="newCategory" required>
+                                <text for="newCategory" id="newCategoryText"> * </text><br>
+                                
+                                <label for="newAuthor">Author's Name </label>
+                                <input type="text" name="newAuthor" id="newAuthor" required placeholder="Last, First">
+                                <text for="newAuthor" id="newAuthorText"> * </text><br>
+                                
+                                <label for="newTitle">Book Title </label>
+                                <input type="text" name="newTitle" id="newTitle" required>
+                                <text for="newTitle" id="newTitleText"> * </text><br>
+								
+								<label for="newEdition">Edition </label>
+                                <input type="int" name="newEdition" id="newEdition" required>
+                                <text for="newEdition" id="newEditionText"> * </text><br>
+								
+								<label for="newPubYear">Publication Year </label>
+                                <input type="int" name="newPubYear" id="newPubYear" required>
+                                <text for="newPubYear" id="newPubYearText"> * </text><br>
+								
+								<label for="newQuantity">Quantity in stock </label>
+                                <input type="int" name="newQuantity" id="newQuantity" required>
+                                <text for="newQuantity" id="newQuantityText"> * </text><br>
+								
+								<label for="newThresh">Minimum Threshold </label>
+                                <input type="text" name="newThresh" id="newThresh" required>
+                                <text for="newThresh" id="newThreshText"> * </text><br>
+								
+								<label for="newBuying">Buying Price </label>
+                                <input type="int" name="newBuying" id="newBuying" required placeholder="Enter Price in Dollars">
+                                <text for="newBuying" id="newBuyingText"> * </text><br>
+								
+								<label for="newSelling">Selling Price </label>
+                                <input type="int" name="newSelling" id="newSelling" required placeholder="Enter Price in Dollars">
+                                <text for="newSelling" id="newSellingText"> * </text><br>
+								
+								<label for="newTitle">Cover Picture </label>
+                                <input type="file" name="newPicture" id="newPicture" accept="image/*" required>
+								<br>
+								
+								<input type="button" id = "addbook_button" value="Add Book" onclick="addBook()">
+			</fieldset>
+		</aside>
+    </body>
+</html>
