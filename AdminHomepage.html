@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Homepage</title>
+</head>
+
+<body>
+
+    <h2>Admin Homepage</h2>
+    <a href="#" class="button">Manage Books</a>
+
+    <h3>Manage User Status</h3>
+    <h4>Promote Account to Admin Status</h4>
+    <form action="#" id="promoteToAdmin">
+        <fieldset class="promote_to_admin">
+            <label for="promoteUserStatus">UserName: </label>
+            <input type="text" name="promoteUserStatus" id="promoteUserStatus" required placeholder="xXJohnXx">
+            <text for="promoteUserStatus" id="promoteUserStatusText">*</text>
+        </fieldset>
+        <button type="submit" form="promoteToAdmin" value="Submit">Submit</button>
+    </form>
+
+    <h4>Change to Registered User Status</h4>
+    <form action="#" id="ChangeToRegisteredUser">
+        <fieldset class="change_to_registered_user">
+            <label for="registeredUserStatus">Username: </label>
+            <input type="text" name="registeredUserStatus" id="registeredUserStatus" required placeholder="xXJohnXx">
+            <text for="registeredUserStatus" id="registeredUserStatusText"> * </text>
+        </fieldset>
+        <button type="submit" form="ChangeToRegisteredUser" value="Submit">Submit</button>
+    </form>
+
+
+    <h4>Suspend Member Account</h4>
+    <form action="#" id="SuspendUser">
+        <fieldset class="suspend_account">
+            <label for="suspendedUserStatus">Username: </label>
+            <input type="text" name="suspendedUserStatus" id="suspendedUserStatus" required placeholder="xXJohnXx">
+            <text for="suspendedUserStatus" id="suspendedUserStatusText">*</text>
+        </fieldset>
+        <button type="submit" form="SuspendUser" value="Submit">Submit</button>
+    </form>
+
+    <a href="#" class="button">View Existing User Status</a>
+
+
+    <h3>Edit Promotions with Details</h3>
+    <h4>Add Promo</h4>
+    <form action="#" id="addPromo">
+        <fieldset class="add_promo">
+
+            <label for="addPromoName">Promotion Name: </label>
+            <input type="text" name="addPromoName" id="addPromoName" required placeholder="xXJohnXx">
+            <text for="addPromoName" id="addPromoNameText"> * </text><br>
+
+            <label for="addPromoCode">Promotion Code: </label>
+            <input type="text" name="addPromoCode" id="addPromoCode" required placeholder="xXJohnXx">
+            <text for="addPromoCode" id="addPromoCodeText"> * </text><br>
+
+            <label for="addPromoDiscount">Promotion Discount: </label>
+            <input type="text" name="addPromoDiscount" id="addPromoDiscount" required placeholder="xXJohnXx">
+            <text for="addPromoDiscount" id="addPromoDiscountText"> * </text><br>
+        </fieldset>
+        <button type="submit" form="addPromo" value="Submit">Submit</button>
+    </form>
+
+    <h4>Remove Promo</h4>
+    <form action="#" id="removePromo">
+        <fieldset class="remove_promo">
+
+            <label for="removePromoCode">Promotion Code: </label>
+            <input type="text" name="removePromoCode" id="removePromoCode" required placeholder="xXJohnXx">
+            <text for="removePromoCode" id="removePromoCodeText"> * </text>
+        </fieldset>
+        <button type="submit" form="removePromo" value="Submit">Submit</button>
+    </form>
+
+    <h4>Edit Promo</h4>
+    <form action="#" id="editPromo">
+        <fieldset class="edit_promo">
+            <p>The Promo Code will be used as a key.</p>
+            <label for="editPromoName">Promotion Name: </label>
+            <input type="text" name="editPromoName" id="editPromoName" required placeholder="xXJohnXx">
+            <text for="editPromoName" id="editPromoNameText"> * </text><br>
+
+            <label for="editPromoCode">Promotion Code: </label>
+            <input type="text" name="editPromoCode" id="editPromoCode" required placeholder="xXJohnXx">
+            <text for="editPromoCode" id="editPromoCodeText"> * </text><br>
+
+            <label for="editPromoDiscount">Promotion Discount: </label>
+            <input type="text" name="editPromoDiscount" id="editPromoDiscount" required placeholder="xXJohnXx">
+            <text for="editPromoDiscount" id="editPromoDiscountText"> * </text><br>
+        </fieldset>
+        <button type="submit" form="editPromo" value="Submit">Submit</button>
+    </form>
