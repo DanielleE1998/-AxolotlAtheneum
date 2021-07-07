@@ -5,16 +5,62 @@ html
     border-image: url(../Images/ImgBorder.JPG) 20% round;
 }
 */ 
+/* Header */
+nav
+{
+    background-image: url(../Images/NavBG.jpg);
+    background-size: 45em auto;
+}
+
+#navBar .col
+{
+    background: none;
+}
+
+#title
+{
+    width: 33em;
+    height: auto;
+}
+
+.login-button, .book-genre 
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered 
+{
+position: absolute;
+top: 60%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+
+#hamburger-toggle
+{
+    width: 7em;
+    height: auto;
+}
+
+.navbar-toggler:focus
+{
+    border: none;
+}
+
+
+/* Slider */
+.carousel-item
+{
+    background: #777
+}
+
 
 h2
 {
     background-color: antiquewhite;
 }
 
-.navbar-toggler
-{
-    padding: 2em;
-}
 
 .col
 {
@@ -26,9 +72,8 @@ h2
 
 }
 
-/* Carousel Elements */
-.sr-only
+.col
 {
-    width: 20%;
-    height: auto;
+    background: #AFB9C8;
 }
+
