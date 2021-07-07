@@ -1,0 +1,34 @@
+/*
+html
+{
+    border: 50px solid transparent;
+    border-image: url(../Images/ImgBorder.JPG) 20% round;
+}
+*/ 
+
+h2
+{
+    background-color: antiquewhite;
+}
+
+.navbar-toggler
+{
+    padding: 2em;
+}
+
+.col
+{
+    padding: 1em;
+    /*background: url(../Images/WoodBackground.jpg) repeat center center fixed;*/
+    color: rgb(204, 106, 68);
+    border-bottom: 50px solid transparent;
+    /*border-image: url(../Images/ImgBorder.JPG) 20% round;*/
+
+}
+
+/* Carousel Elements */
+.sr-only
+{
+    width: 20%;
+    height: auto;
+}
