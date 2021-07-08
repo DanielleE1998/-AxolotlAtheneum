@@ -7,14 +7,18 @@ html
 */ 
 /* Header */
 nav
-{
+{   
+    
     background-image: url(../Images/NavBG.jpg);
+    background-repeat: repeat-x;
+    background-color: aqua;
     background-size: 45em auto;
 }
 
-#navBar .col
+#navBar .row
 {
     background: none;
+    margin-top: 4.5em;
 }
 
 #title
@@ -43,6 +47,18 @@ transform: translate(-50%, -50%);
     height: auto;
 }
 
+.ham-collapse
+{
+    margin-top: 5em;
+    margin-left: 1em;
+}
+
+.account-collapse
+{
+    margin-top: 8em;
+    margin-left: 1em;
+}
+
 .navbar-toggler:focus
 {
     border: none;
@@ -55,25 +71,27 @@ transform: translate(-50%, -50%);
     background: #777
 }
 
-
-h2
-{
-    background-color: antiquewhite;
-}
-
-
 .col
 {
     padding: 1em;
     /*background: url(../Images/WoodBackground.jpg) repeat center center fixed;*/
-    color: rgb(204, 106, 68);
+    color: rgb(255, 255, 255);
     border-bottom: 50px solid transparent;
     /*border-image: url(../Images/ImgBorder.JPG) 20% round;*/
 
 }
 
-.col
+.row
 {
     background: #AFB9C8;
 }
 
+form
+{
+    margin-left: 2em;
+}
+
+label
+{
+    width: 6em;
+}

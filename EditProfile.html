@@ -1,96 +1,252 @@
 <html lang="en">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Edit Profile</title>
-    </head>
-	
-	   <body>
-        
-      <h2>Edit Profile</h2>
-			<fieldset class = "edit_name">
-        <h3>Change Name</h3>
-				<p>Please update your Name:</p>
 
-        <label for="newFName">First Name: </label>
-        <input type="text" name="newFName" id="newFName" required placeholder="John">
-        <text for="newFName" id="newFNameText"> * </text>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="./Styling/styling.css">
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+</head>
 
-        <label for="newLName">Last Name: </label>
-        <input type="text" name="newLName" id="newLName" required placeholder="Doe">
-        <text Lor="newLName" id="newLNameText"> * </text><br>
-      </fieldset>
+<body>
+  <header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid" id="navBar">
+        <div class="row">
+          <div class="col" id="navBar">
+            <!-- Drop Down -->
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span>
+                  <img src="./Images/Hamburger.png" alt="Menu" id="hamburger-toggle">
+                </span>
+              </button>
+            </div>
+            <!-- Collapsed Content -->
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav ham-collapse">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Promo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <fieldset class = "edit_phone">
-        <h3>Change Phone Number</h3>
-				<p>Please change your Phone Number:</p>
+          <!-- Title -->
+          <div class="col">
+            <a href="default.asp" class="navbar-brand text-center">
+              <img src="./Images/Title.png" id="title" alt="Axolotl Atheneum"></a>
+          </div>
 
-        <label for="newPhone">Phone Number: </label>
-        <input type="text" name="newPhone" id="newPhone" required placeholder="XXX-XXX-XXXX">
-        <text for="newPhone" id="newPhoneText"> * </text>
-      </fieldset>
+          <!-- Login -->
+          <div class="col">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#accountMenu">
+              <span class="login-button">
+                <img src="./Images/BookSpine.png" alt="Account" style="width:10em;">
+                <div class="centered">Account</div>
+              </span>
+            </button>
+            <!-- Collapsed Content -->
+            <div class="collapse navbar-collapse" id="accountMenu">
+              <ul class="navbar-nav account-collapse">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Edit Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <fieldset class = "edit_address">
-        <h3>Change Shipping Address</h3>
-				<p>Please enter your new address information:</p>
+          <!-- Cart -->
+          <div class="col ms-auto">
+            <a href="#">
+              <img src="./Images/Cart.png" alt="Cart" style="width:15em; height:auto;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <label for="newLine1">Line 1: </label>
-        <input type="text" name="newLine1" id="newLine1" required placeholder="123 ABC">
-        <text for="newLine1" id="newLine1Text"> * </text><br>
-        
-        <label for="newLine2">Line 2: </label>
-        <input type="text" name="newLine2" id="newLine2" required placeholder="Suite D"><br>
+  <div class="container-md">
+    <div class="row">
+      <div class="col">
+        <!-- Edit Profile -->
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#editProfile">
+            <span class="login-button">
+              <img src="./Images/BookSpineB.png" alt="Edit Profile" style="width:20em;">
+              <div class="centered">Edit Profile</div>
+            </span>
+          </button>
+        </div>
+        <!-- Collapsed Content -->
+        <div class="collapse navbar-collapse" id="editProfile">
+          <form action="#" id="editName">
+            <fieldset class="edit_name">
+              <h3>Change Name</h3>
+              <p>Please update your Name:</p>
 
-        <label for="newCity">City: </label>
-        <input type="text" name="newCity" id="newCity" required placeholder="New York City">
-        <text for="newCity" id="newCityText"> * </text>
+              <label for="newFName">First Name: </label>
+              <input type="text" name="newFName" id="newFName" required placeholder="John">
+              <text for="newFName" id="newFNameText"> * </text><br>
 
-        <label for="newState">State: </label>
-        <input type="text" name="newState" id="newState" required placeholder="New York">
-        <text for="newState" id="newStateText"> * </text><br>
+              <label for="newLName">Last Name: </label>
+              <input type="text" name="newLName" id="newLName" required placeholder="Doe">
+              <text Lor="newLName" id="newLNameText"> * </text><br>
+            </fieldset>
+            <button type="submit" form="editName" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Edit Phone -->
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#editPhone">
+            <span class="login-button">
+              <img src="./Images/BookSpineG.png" alt="Edit Phone #" style="width:20em;">
+              <div class="centered">Edit Phone #</div>
+            </span>
+          </button>
+        </div>
+        <!-- Collapsed Content -->
+        <div class="collapse navbar-collapse" id="editPhone">
+          <form action="#" id="editPhone"></form>
+          <fieldset class="edit_phone">
+            <h3>Change Phone Number</h3>
+            <p>Please change your Phone Number:</p>
 
-        <label for="newCountry">Country: </label>
-        <input type="text" name="newCountry" id="newCountry" required placeholder="United States">
-        <text for="newCountry" id="newCountryText"> * </text>
+            <label for="newPhone">Phone Number: </label>
+            <input type="text" name="newPhone" id="newPhone" required placeholder="XXX-XXX-XXXX">
+            <text for="newPhone" id="newPhoneText"> * </text>
+          </fieldset>
+          <button type="submit" form="editPhone" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- Edit Address -->
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#editAddress">
+            <span class="login-button">
+              <img src="./Images/BookSpineR.png" alt="Edit Adress" style="width:20em;">
+              <div class="centered">Edit Address</div>
+            </span>
+          </button>
+        </div>
+        <!-- Collapsed Content -->
+        <div class="collapse navbar-collapse" id="editAddress">
+          <form action="#" id="editAddress">
+            <fieldset class="edit_address">
+              <h3>Change Shipping Address</h3>
+              <p>Please enter your new address information:</p>
 
-        <label for="newZip">Zip: </label>
-        <input type="text" name="newZip" id="newZip" required placeholder="12345">
-        <text for="newZip" id="newZipText"> * </text><br>
+              <label for="newLine1">Line 1: </label>
+              <input type="text" name="newLine1" id="newLine1" required placeholder="123 ABC">
+              <text for="newLine1" id="newLine1Text"> * </text><br>
 
-			</fieldset>
+              <label for="newLine2">Line 2: </label>
+              <input type="text" name="newLine2" id="newLine2" required placeholder="Suite D"><br>
 
-			<fieldset class = "edit_payment">
-        <h3>Change Payment Card</h3>
-				<p>Please enter your card information:</p>
-        <h4>Card Type:</h4>
+              <label for="newCity">City: </label>
+              <input type="text" name="newCity" id="newCity" required placeholder="New York City">
+              <text for="newCity" id="newCityText"> * </text><br>
 
-        <label for="newCardName">Cardholer Name: </label>
-        <input type="text" name="newCardName" id="newCardName" required placeholder="John Doe">
-        <text for="newCardName" id="newCardNameText"> * </text><br>
-        
-        <input type="checkbox" id="newCardType1" name="newCardType1" value="MasterCard">
-        <label for="newCardType1">MasterCard</label><br>
-        <input type="checkbox" id="newCardType2" name="newCardType2" value="VISA">
-        <label for="newCardType2"> VISA</label><br>
-        <input type="checkbox" id="newCardType3" name="newCardType3" value="Discover">
-        <label for="newCardType3">Discover</label><br>
-        <input type="checkbox" id="newCardType4" name="newCardType4" value="Other">
-        <label for="newCardType4">Other</label><br>
+              <label for="newState">State: </label>
+              <input type="text" name="newState" id="newState" required placeholder="New York">
+              <text for="newState" id="newStateText"> * </text><br>
 
-        <label for="newCardNumber">Card Number: </label>
-        <input type="text" name="newCardNumber" id="newCardNumber" required placeholder="XXXX XXXX XXXX XXXX">
-        <text for="newCardNumber" id="newCardNumberText"> * </text><br>
+              <label for="newCountry">Country: </label>
+              <input type="text" name="newCountry" id="newCountry" required placeholder="United States">
+              <text for="newCountry" id="newCountryText"> * </text><br>
 
-        <label for="newExpirationDate">Expiration Date: </label>
-        <input type="text" name="newExpirationDate" id="newExpirationDate" required placeholder="XX/XX">
-        <text for="newExpirationDate" id="newExpirationDateText"> * </text><br>
+              <label for="newZip">Zip: </label>
+              <input type="text" name="newZip" id="newZip" required placeholder="12345">
+              <text for="newZip" id="newZipText"> * </text><br>
 
-        <label for="newCardZip">Card Zip: </label>
-        <input type="text" name="newCardZip" id="newCardZip" required placeholder="12345">
-        <text for="newCardZip" id="newCardZipText"> * </text><br>
-        
-        
+            </fieldset>
+            <button type="submit" form="editAddress" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
 
-			</fieldset>
-    </body>
+      <div class="col">
+        <!-- Edit Card -->
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#editCard">
+            <span class="login-button">
+              <img src="./Images/BookSpineP.png" alt="Edit Card" style="width:20em;">
+              <div class="centered">Edit Card</div>
+            </span>
+          </button>
+        </div>
+        <!-- Collapsed Content -->
+        <div class="collapse navbar-collapse" id="editCard">
+          <form action="#" id="editCard">
+            <fieldset class="edit_payment">
+              <h3>Change Payment Card</h3>
+              <p>Please enter your card information:</p>
+              <h4>Card Type:</h4>
+
+              <label for="newCardName">Cardholder Name: </label>
+              <input type="text" name="newCardName" id="newCardName" required placeholder="John Doe">
+              <text for="newCardName" id="newCardNameText"> * </text><br>
+
+              <input type="checkbox" id="newCardType1" name="newCardType1" value="MasterCard">
+              <label for="newCardType1">MasterCard</label><br>
+              <input type="checkbox" id="newCardType2" name="newCardType2" value="VISA">
+              <label for="newCardType2"> VISA</label><br>
+              <input type="checkbox" id="newCardType3" name="newCardType3" value="Discover">
+              <label for="newCardType3">Discover</label><br>
+              <input type="checkbox" id="newCardType4" name="newCardType4" value="Other">
+              <label for="newCardType4">Other</label><br>
+
+              <label for="newCardNumber">Card Number: </label>
+              <input type="text" name="newCardNumber" id="newCardNumber" required placeholder="XXXX XXXX XXXX XXXX">
+              <text for="newCardNumber" id="newCardNumberText"> * </text><br>
+
+              <label for="newExpirationDate">Expiration Date: </label>
+              <input type="text" name="newExpirationDate" id="newExpirationDate" required placeholder="XX/XX">
+              <text for="newExpirationDate" id="newExpirationDateText"> * </text><br>
+
+              <label for="newCardZip">Card Zip: </label>
+              <input type="text" name="newCardZip" id="newCardZip" required placeholder="12345">
+              <text for="newCardZip" id="newCardZipText"> * </text><br>
+            </fieldset>
+            <button type="submit" form="editCard" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
