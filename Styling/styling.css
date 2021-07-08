@@ -1,10 +1,8 @@
-/*
 html
 {
-    border: 50px solid transparent;
-    border-image: url(../Images/ImgBorder.JPG) 20% round;
+    height: 100vh;
 }
-*/ 
+ 
 /* Header */
 nav
 {   
@@ -84,16 +82,19 @@ transform: translate(-50%, -50%);
 .col
 {
     padding: 1em;
-    /*background: url(../Images/WoodBackground.jpg) repeat center center fixed;*/
     color: rgb(255, 255, 255);
-    border-bottom: 50px solid transparent;
-    /*border-image: url(../Images/ImgBorder.JPG) 20% round;*/
-
 }
 
 .row
 {
     background: #AFB9C8;
+    
+}
+
+div.shelf
+{
+    border-bottom: 50px solid transparent;
+    border-image: url(../Images/ImgBorder.JPG) 20% round;
 }
 
 form
@@ -109,6 +110,10 @@ label
 body
 {
     background: url(../Images/WoodBackground.jpg) repeat center center fixed;
-    height: 100%;
+}
+
+footer
+{
+    background-image: url(../Images/ImgBorder.JPG);
 }
 

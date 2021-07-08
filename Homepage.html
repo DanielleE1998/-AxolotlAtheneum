@@ -101,11 +101,11 @@
 
     <body>
         <div class="container-md">
+            <div class="row shelf"> </div>
             <div class="row">
                 <div class="col" id="col">
                     <!-- Carousel -->
                     <div class="container">
-
                         <div class="row">
                             <div class="col">
                                 <h2 class=>Featured Books:</h2>
@@ -114,7 +114,8 @@
                                         <div class="carousel-item active">
                                             <div class="container">
                                                 <a href="#">
-                                                    <img src="Images/Books/PrideAndPrejudice.jpg"  class="centered carouselItem"></a>
+                                                    <img src="Images/Books/PrideAndPrejudice.jpg" max-width="100%"
+                                                        max-height="auto" class="centered"></a>
                                             </div>
                                         </div>
                                         <div class=" carousel-item">
@@ -208,11 +209,30 @@
                         </div>
 
                     </div>
+                    <div class="row shelf"> </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="./Images/AboutUs.jpg" width="40%" height="auto" id="About">
+                    <h2>About Us:</h2>
+                    <img src="./Images/AboutUs.png" width="100%" height="auto" id="About">
+                </div>
+                <div class="col">
+                    <p id="definition">ax·o·lotl<br>
+                        /ˈaksəˌlädl/<br>
+                        noun<br>
+                        a Mexican salamander that in natural conditions<br>
+                        retains its aquatic larval form throughout life<br>
+                        but is able to breed.<br><br>
+
+                        Ath·e·nae·um<br>
+                        /ˌaTHəˈnēəm/<br>
+                        noun<br>
+                        used in the names of libraries or institutions <br>
+                        for literary or scientific study.<br><br>
+                        used in the titles of periodicals concerned <br>
+                        with literature, science, and art.
+                    </p>
                 </div>
             </div>
         </div>
@@ -222,10 +242,8 @@
             </script>
     </body>
     <!-- Footer -->
-    <footer class="p-2 bg-dark text-white text-center position-relative">
-        <div class="container">
+    <footer class="p-2 text-white text-center position-relative container-md">
             <p>Axolotl Atheneum &copy; 2021 </p>
-        </div>
     </footer>
 
 </html>
