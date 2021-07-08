@@ -99,8 +99,8 @@
 
     <body>
         <div class="container-md">
-            <h2>Admin Homepage</h2>
             <div class="row">
+                <h2 class=wood-label>Admin Homepage</h2>
                 <div class="col">
 
                     <h3>Manage User Status</h3>
@@ -138,30 +138,47 @@
                         <button type="submit" form="SuspendUser" value="Submit">Submit</button>
                     </form>
 
-                    <h2>_________________________________</h2>
 
-                    <h3>Add Promotions</h3>
-                    <h4>Add Promo</h4>
-                    <form action="#" id="addPromo">
-                        <fieldset class="add_promo">
+                </div>
+                <div class="col">
+                    <a href="#" class="admin-link">
+                        <img src="./Images/BookSpineB.png" alt="Manage Books" style="width:12em;">
+                        <div class="centered">Manage Books</div>
+                        </span>
+                    </a><br>
 
-                            <label for="addPromoName">Promotion Name: </label>
-                            <input type="text" name="addPromoName" id="addPromoName" required placeholder="xXJohnXx">
-                            <text for="addPromoName" id="addPromoNameText"> * </text><br>
+                    <a href="#" class="admin-link">
+                        <img src="./Images/BookSpineG.png" alt="View User Status" style="width:12em; height: 5em;">
+                        <div class="centered">View User Status</div>
+                        </span>
+                    </a>
 
-                            <label for="addPromoCode">Promotion Code: </label>
-                            <input type="text" name="addPromoCode" id="addPromoCode" required placeholder="xXJohnXx">
-                            <text for="addPromoCode" id="addPromoCodeText"> * </text><br>
+                </div>
+            </div>
+            <div class="row shelf"> </div>
+            <div class="row col">
+                <h3>Add Promotions</h3>
+                <h4>Add Promo</h4>
+                <form action="#" id="addPromo">
+                    <fieldset class="add_promo">
 
-                            <label for="addPromoDiscount">Promotion Discount: </label>
-                            <input type="text" name="addPromoDiscount" id="addPromoDiscount" required
-                                placeholder="xXJohnXx">
-                            <text for="addPromoDiscount" id="addPromoDiscountText"> * </text><br>
-                        </fieldset>
-                        <button type="submit" form="addPromo" value="Submit">Submit</button>
-                    </form>
+                        <label for="addPromoName">Promotion Name: </label>
+                        <input type="text" name="addPromoName" id="addPromoName" required placeholder="xXJohnXx">
+                        <text for="addPromoName" id="addPromoNameText"> * </text><br>
 
-                    <!--
+                        <label for="addPromoCode">Promotion Code: </label>
+                        <input type="text" name="addPromoCode" id="addPromoCode" required placeholder="xXJohnXx">
+                        <text for="addPromoCode" id="addPromoCodeText"> * </text><br>
+
+                        <label for="addPromoDiscount">Promotion Discount: </label>
+                        <input type="text" name="addPromoDiscount" id="addPromoDiscount" required
+                            placeholder="xXJohnXx">
+                        <text for="addPromoDiscount" id="addPromoDiscountText"> * </text><br>
+                    </fieldset>
+                    <button type="submit" form="addPromo" value="Submit">Submit</button>
+                </form>
+
+                <!--
                     <h4>Remove Promo</h4>
                     <form action="#" id="removePromo">
                         <fieldset class="remove_promo">
@@ -194,21 +211,6 @@
                         <button type="submit" form="editPromo" value="Submit">Submit</button>
                     </form>
                     -->
-                </div>
-                <div class="col">
-                    <a href="#" class="admin-link">
-                        <img src="./Images/BookSpineB.png" alt="Manage Books" style="width:12em;">
-                        <div class="centered">Manage Books</div>
-                        </span>
-                    </a><br>
-                    
-                    <a href="#" class="admin-link">
-                        <img src="./Images/BookSpineG.png" alt="View User Status" style="width:12em; height: 5em;">
-                        <div class="centered">View User Status</div>
-                        </span>
-                    </a>
-                    
-                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -217,6 +219,6 @@
     </body>
     <footer class="p-2 text-white text-center position-relative container-md">
         <p>Axolotl Atheneum &copy; 2021 </p>
-</footer>
+    </footer>
 
 </html>

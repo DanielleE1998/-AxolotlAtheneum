@@ -57,13 +57,13 @@ transform: translate(-50%, -50%);
 
 .ham-collapse
 {
-    margin-top: 3.5em;
+    margin-top: 2em;
     margin-left: 2em;
 }
 
 .account-collapse
 {
-    margin-top: 4em;
+    margin-top: 2em;
     margin-left: 2em;
 }
 
@@ -112,8 +112,9 @@ body
     background: url(../Images/WoodBackground.jpg) repeat center center fixed;
 }
 
-footer
+.wood-label
 {
     background-image: url(../Images/ImgBorder.JPG);
-}
+    color: white;
+    text-align: center;
 
