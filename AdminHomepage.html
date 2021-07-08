@@ -1,17 +1,18 @@
 <html lang="en">
+<span>.</span>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Edit Profile</title>
-        <link rel="stylesheet" href="./Styling/styling.css">
-        <!-- BootStrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-        <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
-      </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="./Styling/styling.css">
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+</head>
 
 <body>
     <header>
@@ -45,7 +46,7 @@
                                     <a class="nav-link" href="#">Promo</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="./Homepage.html/#About">About</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,8 +63,8 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#accountMenu">
                             <span class="login-button">
-                                <img src="./Images/BookSpineR.png" alt="Account" style="width:10em;">
-                                <div class="centered">Account</div>
+                                <img src="./Images/BookSpine.png" alt="Account" style="width:6em;">
+                                <div class="centered login-text">Account</div>
                             </span>
                         </button>
                         <!-- Collapsed Content -->
@@ -88,108 +89,136 @@
                     <!-- Cart -->
                     <div class="col ms-auto">
                         <a href="#">
-                            <img src="./Images/Cart.png" alt="Cart" style="width:15em; height:auto;">
+                            <img src="./Images/Cart.png" alt="Cart" style="width:9em; height:auto;">
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <body>
-    <h2>Admin Homepage</h2>
-    <a href="#" class="button">Manage Books</a>
+        <div class="container-md">
+            <h2>Admin Homepage</h2>
+            <div class="row">
+                <div class="col">
 
-    <h3>Manage User Status</h3>
-    <h4>Promote Account to Admin Status</h4>
-    <form action="#" id="promoteToAdmin">
-        <fieldset class="promote_to_admin">
-            <label for="promoteUserStatus">UserName: </label>
-            <input type="text" name="promoteUserStatus" id="promoteUserStatus" required placeholder="xXJohnXx">
-            <text for="promoteUserStatus" id="promoteUserStatusText">*</text>
-        </fieldset>
-        <button type="submit" form="promoteToAdmin" value="Submit">Submit</button>
-    </form>
+                    <h3>Manage User Status</h3>
+                    <h4>Promote Account to Admin Status</h4>
+                    <form action="#" id="promoteToAdmin">
+                        <fieldset class="promote_to_admin">
+                            <label for="promoteUserStatus">UserName: </label>
+                            <input type="text" name="promoteUserStatus" id="promoteUserStatus" required
+                                placeholder="xXJohnXx">
+                            <text for="promoteUserStatus" id="promoteUserStatusText">*</text>
+                        </fieldset>
+                        <button type="submit" form="promoteToAdmin" value="Submit">Submit</button>
+                    </form>
 
-    <h4>Change to Registered User Status</h4>
-    <form action="#" id="ChangeToRegisteredUser">
-        <fieldset class="change_to_registered_user">
-            <label for="registeredUserStatus">Username: </label>
-            <input type="text" name="registeredUserStatus" id="registeredUserStatus" required placeholder="xXJohnXx">
-            <text for="registeredUserStatus" id="registeredUserStatusText"> * </text>
-        </fieldset>
-        <button type="submit" form="ChangeToRegisteredUser" value="Submit">Submit</button>
-    </form>
-
-
-    <h4>Suspend Member Account</h4>
-    <form action="#" id="SuspendUser">
-        <fieldset class="suspend_account">
-            <label for="suspendedUserStatus">Username: </label>
-            <input type="text" name="suspendedUserStatus" id="suspendedUserStatus" required placeholder="xXJohnXx">
-            <text for="suspendedUserStatus" id="suspendedUserStatusText">*</text>
-        </fieldset>
-        <button type="submit" form="SuspendUser" value="Submit">Submit</button>
-    </form>
-
-    <a href="#" class="button">View Existing User Status</a>
+                    <h4>Change to Registered User Status</h4>
+                    <form action="#" id="ChangeToRegisteredUser">
+                        <fieldset class="change_to_registered_user">
+                            <label for="registeredUserStatus">Username: </label>
+                            <input type="text" name="registeredUserStatus" id="registeredUserStatus" required
+                                placeholder="xXJohnXx">
+                            <text for="registeredUserStatus" id="registeredUserStatusText"> * </text>
+                        </fieldset>
+                        <button type="submit" form="ChangeToRegisteredUser" value="Submit">Submit</button>
+                    </form>
 
 
-    <h3>Edit Promotions with Details</h3>
-    <h4>Add Promo</h4>
-    <form action="#" id="addPromo">
-        <fieldset class="add_promo">
+                    <h4>Suspend Member Account</h4>
+                    <form action="#" id="SuspendUser">
+                        <fieldset class="suspend_account">
+                            <label for="suspendedUserStatus">Username: </label>
+                            <input type="text" name="suspendedUserStatus" id="suspendedUserStatus" required
+                                placeholder="xXJohnXx">
+                            <text for="suspendedUserStatus" id="suspendedUserStatusText">*</text>
+                        </fieldset>
+                        <button type="submit" form="SuspendUser" value="Submit">Submit</button>
+                    </form>
 
-            <label for="addPromoName">Promotion Name: </label>
-            <input type="text" name="addPromoName" id="addPromoName" required placeholder="xXJohnXx">
-            <text for="addPromoName" id="addPromoNameText"> * </text><br>
+                    <h2>_________________________________</h2>
 
-            <label for="addPromoCode">Promotion Code: </label>
-            <input type="text" name="addPromoCode" id="addPromoCode" required placeholder="xXJohnXx">
-            <text for="addPromoCode" id="addPromoCodeText"> * </text><br>
+                    <h3>Add Promotions</h3>
+                    <h4>Add Promo</h4>
+                    <form action="#" id="addPromo">
+                        <fieldset class="add_promo">
 
-            <label for="addPromoDiscount">Promotion Discount: </label>
-            <input type="text" name="addPromoDiscount" id="addPromoDiscount" required placeholder="xXJohnXx">
-            <text for="addPromoDiscount" id="addPromoDiscountText"> * </text><br>
-        </fieldset>
-        <button type="submit" form="addPromo" value="Submit">Submit</button>
-    </form>
+                            <label for="addPromoName">Promotion Name: </label>
+                            <input type="text" name="addPromoName" id="addPromoName" required placeholder="xXJohnXx">
+                            <text for="addPromoName" id="addPromoNameText"> * </text><br>
 
-    <h4>Remove Promo</h4>
-    <form action="#" id="removePromo">
-        <fieldset class="remove_promo">
+                            <label for="addPromoCode">Promotion Code: </label>
+                            <input type="text" name="addPromoCode" id="addPromoCode" required placeholder="xXJohnXx">
+                            <text for="addPromoCode" id="addPromoCodeText"> * </text><br>
 
-            <label for="removePromoCode">Promotion Code: </label>
-            <input type="text" name="removePromoCode" id="removePromoCode" required placeholder="xXJohnXx">
-            <text for="removePromoCode" id="removePromoCodeText"> * </text>
-        </fieldset>
-        <button type="submit" form="removePromo" value="Submit">Submit</button>
-    </form>
+                            <label for="addPromoDiscount">Promotion Discount: </label>
+                            <input type="text" name="addPromoDiscount" id="addPromoDiscount" required
+                                placeholder="xXJohnXx">
+                            <text for="addPromoDiscount" id="addPromoDiscountText"> * </text><br>
+                        </fieldset>
+                        <button type="submit" form="addPromo" value="Submit">Submit</button>
+                    </form>
 
-    <h4>Edit Promo</h4>
-    <form action="#" id="editPromo">
-        <fieldset class="edit_promo">
-            <p>The Promo Code will be used as a key.</p>
-            <label for="editPromoName">Promotion Name: </label>
-            <input type="text" name="editPromoName" id="editPromoName" required placeholder="xXJohnXx">
-            <text for="editPromoName" id="editPromoNameText"> * </text><br>
+                    <!--
+                    <h4>Remove Promo</h4>
+                    <form action="#" id="removePromo">
+                        <fieldset class="remove_promo">
 
-            <label for="editPromoCode">Promotion Code: </label>
-            <input type="text" name="editPromoCode" id="editPromoCode" required placeholder="xXJohnXx">
-            <text for="editPromoCode" id="editPromoCodeText"> * </text><br>
+                            <label for="removePromoCode">Promotion Code: </label>
+                            <input type="text" name="removePromoCode" id="removePromoCode" required
+                                placeholder="xXJohnXx">
+                            <text for="removePromoCode" id="removePromoCodeText"> * </text>
+                        </fieldset>
+                        <button type="submit" form="removePromo" value="Submit">Submit</button>
+                    </form>
 
-            <label for="editPromoDiscount">Promotion Discount: </label>
-            <input type="text" name="editPromoDiscount" id="editPromoDiscount" required placeholder="xXJohnXx">
-            <text for="editPromoDiscount" id="editPromoDiscountText"> * </text><br>
-        </fieldset>
-        <button type="submit" form="editPromo" value="Submit">Submit</button>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-</body>
-<footer class="p-2 bg-dark text-white text-center position-relative">
-    <div class="container">
-        <p>Axolotl Atheneum &copy; 2021 </p>
-    </div>
-</footer>
+                    <h4>Edit Promo</h4>
+                    <form action="#" id="editPromo">
+                        <fieldset class="edit_promo">
+                            <p>The Promo Code will be used as a key.</p>
+                            <label for="editPromoName">Promotion Name: </label>
+                            <input type="text" name="editPromoName" id="editPromoName" required placeholder="xXJohnXx">
+                            <text for="editPromoName" id="editPromoNameText"> * </text><br>
+
+                            <label for="editPromoCode">Promotion Code: </label>
+                            <input type="text" name="editPromoCode" id="editPromoCode" required placeholder="xXJohnXx">
+                            <text for="editPromoCode" id="editPromoCodeText"> * </text><br>
+
+                            <label for="editPromoDiscount">Promotion Discount: </label>
+                            <input type="text" name="editPromoDiscount" id="editPromoDiscount" required
+                                placeholder="xXJohnXx">
+                            <text for="editPromoDiscount" id="editPromoDiscountText"> * </text><br>
+                        </fieldset>
+                        <button type="submit" form="editPromo" value="Submit">Submit</button>
+                    </form>
+                    -->
+                </div>
+                <div class="col">
+                    <a href="#" class="admin-link">
+                        <img src="./Images/BookSpineB.png" alt="Manage Books" style="width:12em;">
+                        <div class="centered">Manage Books</div>
+                        </span>
+                    </a><br>
+                    
+                    <a href="#" class="admin-link">
+                        <img src="./Images/BookSpineG.png" alt="View User Status" style="width:12em; height: 5em;">
+                        <div class="centered">View User Status</div>
+                        </span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+            </script>
+    </body>
+    <footer class="p-2 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p>Axolotl Atheneum &copy; 2021 </p>
+        </div>
+    </footer>
+
 </html>
