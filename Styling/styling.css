@@ -73,10 +73,22 @@ transform: translate(-50%, -50%);
 }
 
 
-/* Slider */
-.carousel-item
+.featuredBook img
 {
-    background: #777
+    height: 400px;
+    object-fit: cover;
+}
+
+.featuredAuthor img
+{
+    height: 200px;
+    object-fit: cover;
+}
+
+.featuredAuthor h3
+{
+    text-align: left;
+    font-size: 50%;
 }
 
 .col
